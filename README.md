@@ -13,8 +13,10 @@ Take webcam shots from target just sending a malicious link
 ## Installing (Kali Linux/Termux):
 
 ```
+apt update && apt upgrade
 git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 cd CAM-DUMPER
+pip install php
 bash camdumper.sh
 
 ```

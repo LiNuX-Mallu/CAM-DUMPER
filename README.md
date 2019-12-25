@@ -13,11 +13,17 @@ Take webcam shots from target just sending a malicious link
 ## Installing (Kali Linux/Termux):
 
 ```
-apt update && apt upgrade
-git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
-cd CAM-DUMPER
-pip install php
-bash camdumper.sh
+$apt update && apt upgrade
+$git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
+$cd CAM-DUMPER
+$chmod +x camdumper.sh ngrok
+$pip install php
+$bash camdumper.sh
+
+then make your hotspot on and choose ngrok because serveo is down
+
+
+
 
 ```
 

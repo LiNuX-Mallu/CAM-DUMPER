@@ -1,6 +1,6 @@
-<h1 text-align="center">CAM-DUMPER</h1>
-<p><img src="cd.jpg" max-width="90%%" height="auto"></p>
-<p text-align="center">Take webcam shots from target by just sending a malicious link</p>
+<h1 align="center">CAM-DUMPER</h1>
+<p align="center"><img src="cd.jpg" max-width="90%%" height="auto"></p>
+<p align="center">Take webcam shots from target by just sending a malicious link</p>
 
 # How it works?
 <p>The tool generates a malicious HTTPS page using Serveo or Ngrok Port Forwarding methods, and a javascript code to cam requests using MediaDevices.getUserMedia. </p>

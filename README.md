@@ -22,4 +22,4 @@ $ chmod +x camdumper.sh ngrok
 $ bash camdumper.sh
 
 ```
-<p>replace this wget (url) with version suitable for yours from <a href="https://ngrok.com/download">here</a></p>
+<p>replace the wget (url) with version suitable for yours from <a href="https://ngrok.com/download">here</a></p>

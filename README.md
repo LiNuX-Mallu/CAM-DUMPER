@@ -20,7 +20,8 @@ $ apt install git
 ```
 $ apt install php wget curl jq
 ```
-```$ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
+```
+$ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 ```
 ```
 $ cd CAM-DUMPER

@@ -23,8 +23,8 @@ $ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
 $ ./camdumper.sh
 
 ```
-#####if $HOME/.ngrok2/ngrok.yml doesnt exist then
-#####you must create it by running-
+if $HOME/.ngrok2/ngrok.yml doesnt exist then
+you must create it by running-
 ```
 $ mkdir $HOME/.ngrok2 && touch $HOME/.ngrok2/ngrok.yml
 ```

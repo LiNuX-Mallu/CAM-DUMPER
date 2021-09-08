@@ -11,7 +11,8 @@
 
 ## Installing (Kali Linux/Termux):
 
-$```
+$
+```
  apt update && apt upgrade
 ```
 ```

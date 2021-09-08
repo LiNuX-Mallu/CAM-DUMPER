@@ -11,8 +11,8 @@
 
 ## Installing (Kali Linux/Termux):
 
-```
-$ apt update && apt upgrade
+$```
+ apt update && apt upgrade
 ```
 ```
 $ apt install git

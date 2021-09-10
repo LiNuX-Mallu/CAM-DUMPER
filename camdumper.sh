@@ -7,7 +7,7 @@ if  ./ngrok -v > dev\null
  true
 else
  echo "installing ngrok..."
- wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-li>
+ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip && chmod +x ngrok && export USER=root
 fi
 
 trap 'printf "\n";stop' 2

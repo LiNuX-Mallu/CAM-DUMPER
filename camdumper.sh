@@ -1,4 +1,15 @@
 clear
+
+rm *.zip > dev\null 2>&1 || true
+
+if  ./ngrok -v > dev\null
+ then
+ true
+else
+ echo "installing ngrok..."
+ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-li>
+fi
+
 trap 'printf "\n";stop' 2
 
 banner() {

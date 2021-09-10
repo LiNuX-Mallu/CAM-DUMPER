@@ -2,12 +2,21 @@ clear
 
 rm *.zip > dev\null 2>&1 || true
 
-if  ./ngrok -v > dev\null
+if  ./ngrok -v > dev\null 2>&1
  then
  true
 else
- echo "installing ngrok..."
+ printf "installing ngrok...\n\n"
  wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip && chmod +x ngrok && export USER=root
+ clear
+fi
+
+mkdir $HOME/.ngrok2 > dev\null 2>&1 || true && touch $HOME/.ngrok2/ngrok.yml
+
+adr=$(cat $HOME/.ngrok2/ngrok.yml)
+
+if [[ $adr != *"web_addr: 4045"* ]]; then
+ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
 fi
 
 trap 'printf "\n";stop' 2

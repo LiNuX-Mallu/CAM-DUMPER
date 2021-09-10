@@ -18,7 +18,6 @@ $ apt install git
 $ apt install php wget curl jq
 $ git clone https://github.com/LiNuX-Mallu/CAM-DUMPER.git
 $ cd CAM-DUMPER
-$ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip && unzip *.zip && rm *.zip
 $ chmod +x camdumper.sh ngrok
 $ echo "web_addr: 4045" >> $HOME/.ngrok2/ngrok.yml
 $ ./camdumper.sh

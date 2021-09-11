@@ -21,6 +21,6 @@ $ chmod +x camdumper.sh
 $ ./camdumper.sh
 ```
 
-<p> install <a href="https://play.google.com/store/apps/details?id=me.zhanghai.android.files"> MATERIAL FILES </a> app from playstore for easy managing captured files . </p> 
+<p> Termux users should install <a href="https://play.google.com/store/apps/details?id=me.zhanghai.android.files">  MATERIAL FILES  </a> app from playstore for easy managing captured files.</p> 
 
-<b>happy hacking ✨<b>
+<b>happy hacking :]<b>

